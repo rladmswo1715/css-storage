@@ -1,0 +1,28 @@
+// 프리텐다드 글꼴
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+.font {
+  &__pretendard {
+    font-family: "Pretendard", sans-serif;
+  }
+
+  &__style {
+    &__normal {
+      font-style: normal;
+    }
+
+    &__italic {
+      font-style: italic;
+    }
+  }
+
+  &__weight {
+    &__normal {
+      font-weight: 400;
+    }
+
+    &__bold {
+      font-weight: 700;
+    }
+  }
+}
