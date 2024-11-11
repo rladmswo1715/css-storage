@@ -1,0 +1,46 @@
+@import "/src/styles/mixins";
+
+.navigaion-content-wrap {
+  @include navigation-padding;
+}
+
+.navigaion-content {
+  position: relative;
+  width: 100%;
+  border: 1px solid #999999;
+  padding: 30px 20px 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+
+  &__item {
+    .main-category {
+      margin-bottom: 12px;
+    }
+
+    .line {
+      @include line(#000);
+    }
+
+    .category-items {
+      margin-top: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 14px;
+      color: #444;
+      letter-spacing: 0.2px;
+    }
+  }
+}
+
+.close-btn {
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+
+  &__img {
+    width: 40px;
+    height: 40px;
+  }
+}

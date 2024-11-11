@@ -3,7 +3,8 @@ import topBanner from "@/assets/pr1/banner/top_bn.jpg";
 import logo from "@/assets/pr1/logo.png";
 import { AiOutlineShopping } from "react-icons/ai";
 import { LuUser2 } from "react-icons/lu";
-import SearchInput from "@/components/input/SearchInput/SearchInput";
+import SearchInput from "@/components/pr1/input/SearchInput/SearchInput";
+import NavigationBar from "./NavigationBar/NavigationBar";
 
 const Header = () => {
   return (
@@ -48,6 +49,10 @@ const Header = () => {
             </div>
           </div>
         </div>
+
+        <hr className={styles.line} />
+
+        <NavigationBar />
       </div>
     </header>
   );

@@ -1,0 +1,10 @@
+@mixin navigation-padding {
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+@mixin line($color: #e6e6e6) {
+  border: none;
+  height: 1px;
+  background-color: $color;
+}

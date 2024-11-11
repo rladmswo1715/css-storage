@@ -1,3 +1,4 @@
+@import "/src/styles/mixins";
 header {
   position: fixed;
 }
@@ -59,8 +60,12 @@ header {
     gap: 10px;
 
     .menu-item {
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
     }
   }
+}
+
+.line {
+  @include line;
 }
