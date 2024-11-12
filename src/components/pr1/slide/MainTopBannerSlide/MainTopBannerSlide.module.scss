@@ -1,0 +1,71 @@
+.banner-wrap {
+  position: relative;
+  width: 100%;
+  height: 560px;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__text {
+    position: absolute;
+    top: 55%;
+    z-index: 2;
+    font-size: 24px;
+    transform: translateY(-50%);
+    transition: top 0.5s ease;
+    opacity: 0;
+  }
+
+  &__text.left {
+    left: 10%;
+  }
+
+  &__text.right {
+    right: 10%;
+  }
+
+  &__text.animateMainText {
+    animation: slideInMainText 3s forwards;
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  &__text.animateSubText {
+    animation: slideInSubText 3s forwards;
+    animation-delay: 1s;
+    font-size: 18px;
+    color: #474747;
+  }
+}
+
+@keyframes slideInMainText {
+  0% {
+    top: 55%;
+    opacity: 0;
+  }
+  100% {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInSubText {
+  0% {
+    top: var(--sub-text-start);
+    opacity: 0;
+  }
+  100% {
+    top: var(--sub-text-end);
+    opacity: 1;
+  }
+}
+
+:global(.swiper-button-prev),
+:global(.swiper-button-next) {
+  color: #656464;
+  width: 100px;
+  height: 100px;
+}
