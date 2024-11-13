@@ -60,6 +60,7 @@ const MainTopBannerSlide = () => {
       navigation
       autoplay={{ delay: 3000, disableOnInteraction: false }}
       loop={true}
+      speed={800}
     >
       {MAIN_TOP_BANNER_DATA.map((slide, index) => (
         <SwiperSlide key={slide.id}>

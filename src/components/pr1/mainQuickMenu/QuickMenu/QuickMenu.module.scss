@@ -1,0 +1,18 @@
+.menu-wrap {
+  position: relative;
+  width: 100%;
+  padding: 0 44px;
+}
+
+.menu-bar {
+  position: absolute;
+  z-index: 3;
+  top: -40px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 35px 56px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 88px);
+  gap: 20px;
+}

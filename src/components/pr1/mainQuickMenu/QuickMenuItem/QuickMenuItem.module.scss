@@ -1,0 +1,31 @@
+.item-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease, transform 2s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  > span {
+    color: #777777;
+  }
+}
+
+.img-wrap {
+  border-radius: 50%;
+  padding: 20px;
+
+  &.purple {
+    background-color: #ded0e0;
+  }
+
+  &.blue {
+    background-color: #d0cfe0;
+  }
+}
