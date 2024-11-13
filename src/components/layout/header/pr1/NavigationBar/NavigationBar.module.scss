@@ -1,7 +1,9 @@
 @import "/src/styles/mixins";
 
-.navigaion-item {
+.navigation-item {
   @include navigation-padding;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,14 +44,4 @@
 
 .line {
   @include line;
-}
-
-.navigaion-content-wrap {
-  @include navigation-padding;
-}
-
-.navigaion-content {
-  width: 100%;
-  border: 1px solid #999999;
-  padding: 30px 20px;
 }

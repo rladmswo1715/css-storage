@@ -14,10 +14,10 @@ interface INavigationContent {
 
 const NavigationContent = ({ setOpen, naviItems }: INavigationContent) => {
   return (
-    <div className={styles["navigaion-content-wrap"]}>
-      <div className={styles["navigaion-content"]}>
+    <div className={styles["navigation-content-wrap"]}>
+      <div className={styles["navigation-content"]}>
         {Object.keys(naviItems).map((item) => (
-          <div key={item} className={styles["navigaion-content__item"]}>
+          <div key={item} className={styles["navigation-content__item"]}>
             <a href={naviItems[item].url}>
               <div className={styles["main-category"]}>{item}</div>
             </a>

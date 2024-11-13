@@ -13,7 +13,7 @@ const NavigationBar = () => {
 
   return (
     <>
-      <div className={styles["navigaion-item"]}>
+      <div className={styles["navigation-item"]}>
         <div className={styles["category-item"]}>
           <button
             className={styles["category-item__toggle-btn"]}

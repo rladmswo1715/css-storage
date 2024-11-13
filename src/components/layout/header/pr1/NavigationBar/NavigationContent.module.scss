@@ -1,10 +1,10 @@
 @import "/src/styles/mixins";
 
-.navigaion-content-wrap {
+.navigation-content-wrap {
   @include navigation-padding;
 }
 
-.navigaion-content {
+.navigation-content {
   position: relative;
   width: 100%;
   border: 1px solid #999999;
