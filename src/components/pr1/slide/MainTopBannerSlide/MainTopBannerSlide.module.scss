@@ -1,3 +1,5 @@
+@import "/src/styles/variables";
+
 .banner-wrap {
   position: relative;
   width: 100%;
@@ -12,7 +14,7 @@
   &__text {
     position: absolute;
     top: 55%;
-    z-index: 2;
+    z-index: $G-z-index-slide;
     font-size: 24px;
     transform: translateY(-50%);
     transition: top 0.5s ease;

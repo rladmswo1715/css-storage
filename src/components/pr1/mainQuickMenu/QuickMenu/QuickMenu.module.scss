@@ -1,3 +1,5 @@
+@import "/src/styles/variables";
+
 .menu-wrap {
   position: relative;
   width: 100%;
@@ -6,7 +8,7 @@
 
 .menu-bar {
   position: absolute;
-  z-index: 3;
+  z-index: $G-z-index-quickMenu;
   top: -40px;
   background-color: #fff;
   border-radius: 30px;

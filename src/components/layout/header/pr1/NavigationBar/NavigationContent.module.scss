@@ -1,17 +1,21 @@
 @import "/src/styles/mixins";
+@import "/src/styles/variables";
 
 .navigation-content-wrap {
   @include navigation-padding;
+  position: relative;
 }
 
 .navigation-content {
-  position: relative;
-  width: 100%;
+  position: absolute;
+  width: calc(100% - 320px);
   border: 1px solid #999999;
   padding: 30px 20px 80px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
+  background-color: #fff;
+  z-index: $G-z-index-header;
 
   &__item {
     .main-category {
