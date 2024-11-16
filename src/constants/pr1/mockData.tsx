@@ -1,6 +1,13 @@
 import slideImage1 from "@/assets/pr1/banner/main_bn_1.jpg";
 import slideImage2 from "@/assets/pr1/banner/main_bn_2.jpg";
 import slideImage3 from "@/assets/pr1/banner/main_bn_3.jpg";
+import product1 from "@/assets/pr1/product/product_1.jpg";
+import product2 from "@/assets/pr1/product/product_2.jpg";
+import product3 from "@/assets/pr1/product/product_3.jpg";
+import product4 from "@/assets/pr1/product/product_4.jpg";
+import product5 from "@/assets/pr1/product/product_5.jpg";
+import product6 from "@/assets/pr1/product/product_6.jpg";
+import product7 from "@/assets/pr1/product/product_7.jpg";
 
 type TNAVIGATION_ITEMS = Record<
   string,
@@ -9,6 +16,18 @@ type TNAVIGATION_ITEMS = Record<
     menuItems: string[];
   }
 >;
+
+interface IMAIN_PRODUCT_SLIDE_DATA {
+  id: number;
+  img: string;
+  discount?: string;
+  title: string;
+  description: string;
+  price: number;
+  discountPrice?: number;
+  isBest: boolean;
+  isNew: boolean;
+}
 
 export const NAVIGATION_ITEMS: TNAVIGATION_ITEMS = {
   핫딜: {
@@ -60,5 +79,75 @@ export const MAIN_TOP_BANNER_DATA = [
     mainText: "예쁜 화장 하세요!",
     subText: "하루종일",
     textPosition: "right",
+  },
+];
+
+export const MAIN_PRODUCT_SLIDE_DATA: IMAIN_PRODUCT_SLIDE_DATA[] = [
+  {
+    id: 1,
+    img: product1,
+    discount: "29%",
+    title: "향수 마린",
+    description: "로즈향으로 시크하게",
+    price: 88900,
+    discountPrice: 63000,
+    isBest: true,
+    isNew: false,
+  },
+  {
+    id: 2,
+    img: product2,
+    title: "립스틱",
+    description: "보습 효과까지",
+    price: 39800,
+    isBest: true,
+    isNew: false,
+  },
+  {
+    id: 3,
+    img: product3,
+    title: "향수 마린22",
+    description: "로즈향으로 시크하게22",
+    price: 88900,
+    isBest: false,
+    isNew: false,
+  },
+  {
+    id: 4,
+    img: product4,
+    discount: "40%",
+    title: "치약",
+    description: "상쾌해요",
+    price: 10000,
+    discountPrice: 6000,
+    isBest: true,
+    isNew: true,
+  },
+  {
+    id: 5,
+    img: product5,
+    title: "향수 마린1234",
+    description: "로즈향으로 시크하게1234",
+    price: 88900,
+    isBest: true,
+    isNew: false,
+  },
+  {
+    id: 6,
+    img: product6,
+    title: "가나다라",
+    description: "안녕하세요",
+    price: 88900,
+    isBest: false,
+    isNew: true,
+  },
+  {
+    id: 7,
+    img: product7,
+    title: "펌프",
+    description: "펌프 상품입니다~~",
+    price: 88900,
+    isBest: false,
+    isNew: true,
   },
 ];
