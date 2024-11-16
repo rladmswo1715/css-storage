@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
 import styles from "./QuickMenuItem.module.scss";
+import useRefForanimate from "@/hooks/pr1/useRefForAnimate";
 
 interface IQuickMenuItem {
   img: JSX.Element;
@@ -14,29 +14,7 @@ const QuickMenuItem = ({
   background,
   delay,
 }: IQuickMenuItem) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const itemRef = useRef<HTMLAnchorElement>(null);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    const currentItem = itemRef.current;
-
-    if (currentItem) {
-      observer.observe(currentItem);
-    }
-
-    return () => {
-      if (currentItem) observer.unobserve(currentItem);
-    };
-  }, []);
+  const { isVisible, itemRef } = useRefForanimate<HTMLAnchorElement>();
 
   return (
     <a
