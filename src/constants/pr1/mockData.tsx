@@ -27,6 +27,7 @@ interface IMAIN_PRODUCT_SLIDE_DATA {
   discountPrice?: number;
   isBest: boolean;
   isNew: boolean;
+  category: string;
 }
 
 export const NAVIGATION_ITEMS: TNAVIGATION_ITEMS = {
@@ -93,6 +94,7 @@ export const MAIN_PRODUCT_SLIDE_DATA: IMAIN_PRODUCT_SLIDE_DATA[] = [
     discountPrice: 63000,
     isBest: true,
     isNew: false,
+    category: "aaa",
   },
   {
     id: 2,
@@ -102,6 +104,7 @@ export const MAIN_PRODUCT_SLIDE_DATA: IMAIN_PRODUCT_SLIDE_DATA[] = [
     price: 39800,
     isBest: true,
     isNew: false,
+    category: "bbb",
   },
   {
     id: 3,
@@ -111,6 +114,7 @@ export const MAIN_PRODUCT_SLIDE_DATA: IMAIN_PRODUCT_SLIDE_DATA[] = [
     price: 88900,
     isBest: false,
     isNew: false,
+    category: "ccc",
   },
   {
     id: 4,
@@ -122,6 +126,7 @@ export const MAIN_PRODUCT_SLIDE_DATA: IMAIN_PRODUCT_SLIDE_DATA[] = [
     discountPrice: 6000,
     isBest: true,
     isNew: true,
+    category: "ddd",
   },
   {
     id: 5,
@@ -131,6 +136,7 @@ export const MAIN_PRODUCT_SLIDE_DATA: IMAIN_PRODUCT_SLIDE_DATA[] = [
     price: 88900,
     isBest: true,
     isNew: false,
+    category: "eee",
   },
   {
     id: 6,
@@ -140,6 +146,7 @@ export const MAIN_PRODUCT_SLIDE_DATA: IMAIN_PRODUCT_SLIDE_DATA[] = [
     price: 88900,
     isBest: false,
     isNew: true,
+    category: "fff",
   },
   {
     id: 7,
@@ -149,5 +156,6 @@ export const MAIN_PRODUCT_SLIDE_DATA: IMAIN_PRODUCT_SLIDE_DATA[] = [
     price: 88900,
     isBest: false,
     isNew: true,
+    category: "ggg",
   },
 ];

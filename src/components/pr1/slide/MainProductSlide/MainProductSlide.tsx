@@ -5,8 +5,6 @@ import { Swiper as SwiperCore } from "swiper";
 import { Navigation } from "swiper/modules";
 import { MAIN_PRODUCT_SLIDE_DATA } from "@/constants/pr1/mockData";
 import { useState } from "react";
-import { AiOutlineHeart } from "react-icons/ai";
-import { formatNumberWithCommas } from "@/utills/pr1/common";
 import MainProductCard from "@/components/product/MainProductCard/MainProductCard";
 
 const MainProductSlide = () => {
@@ -40,7 +38,11 @@ const MainProductSlide = () => {
           >
             <MainProductCard
               data={slide}
-              imgStyle={activeIndex !== index ? { height: "352px" } : {}}
+              imgStyle={
+                activeIndex !== index
+                  ? { height: "352px" }
+                  : { height: "432px" }
+              }
             />
           </SwiperSlide>
         ))}

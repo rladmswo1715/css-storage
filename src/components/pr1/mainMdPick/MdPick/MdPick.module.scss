@@ -1,0 +1,19 @@
+.md-pick-item-wrap {
+  padding: 0 150px;
+  margin-top: 50px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 540px);
+
+  opacity: 1;
+  transition: opacity 0.3s ease;
+
+  &.fade-out {
+    opacity: 0;
+  }
+
+  &.fade-in {
+    opacity: 1;
+  }
+}

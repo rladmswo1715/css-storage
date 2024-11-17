@@ -1,0 +1,33 @@
+@import "/src/styles/mixins";
+
+.h2 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #121212;
+}
+
+.md-pick-wrap {
+  @include animateY;
+}
+
+.category-wrap {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.category-item {
+  color: #b9b9b9;
+  font-size: 17px;
+  font-weight: 500;
+
+  &.focusing {
+    color: #121212;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+}
