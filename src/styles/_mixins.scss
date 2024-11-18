@@ -9,6 +9,14 @@
   background-color: $color;
 }
 
+@mixin h2() {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #121212;
+}
+
 @mixin animateY() {
   opacity: 0;
   transform: translateY(20px);

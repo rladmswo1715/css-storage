@@ -1,11 +1,7 @@
 @import "/src/styles/mixins";
 
 .h2 {
-  margin-top: 100px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 600;
-  color: #121212;
+  @include h2;
 }
 
 .md-pick-wrap {

@@ -5,6 +5,7 @@ import MainTopBannerSlide from "@/components/pr1/slide/MainTopBannerSlide/MainTo
 import useRefForanimate from "@/hooks/pr1/useRefForAnimate";
 import centerBn from "@/assets/pr1/banner/center_bn.jpg";
 import MdPickContainer from "@/components/pr1/mainMdPick/MdPickContainer/MdPcikContainer";
+import WeeklySpecial from "@/components/pr1/WeeklySpecial/WeeklySpecial";
 
 const First = () => {
   const { isVisible: isVisibleSlide, itemRef: itemRefSlide } =
@@ -36,6 +37,7 @@ const First = () => {
         </a>
       </div>
       <MdPickContainer />
+      <WeeklySpecial />
     </div>
   );
 };

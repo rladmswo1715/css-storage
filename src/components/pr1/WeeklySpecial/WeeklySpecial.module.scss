@@ -1,0 +1,39 @@
+@import "/src/styles/mixins";
+
+.h2 {
+  @include h2;
+  margin-top: 80px;
+  @include animateY;
+}
+
+.parallax {
+  background-image: url("../../../assets/pr1/banner/parallax_bn.jpg");
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 150px;
+}
+
+.animate-container {
+  @include animateY;
+  text-align: left;
+
+  & > h3 {
+    color: #000;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  & > span {
+    color: #747070;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.item-wrap {
+  display: flex;
+  gap: 8px;
+}
