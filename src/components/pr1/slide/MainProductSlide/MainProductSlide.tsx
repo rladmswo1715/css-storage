@@ -5,7 +5,7 @@ import { Swiper as SwiperCore } from "swiper";
 import { Navigation } from "swiper/modules";
 import { MAIN_PRODUCT_SLIDE_DATA } from "@/constants/pr1/mockData";
 import { useState } from "react";
-import MainProductCard from "@/components/product/MainProductCard/MainProductCard";
+import MainProductCard from "@/components/pr1/product/MainProductCard/MainProductCard";
 
 const MainProductSlide = () => {
   const [activeIndex, setActiveIndex] = useState(0);

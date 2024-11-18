@@ -1,4 +1,4 @@
-import MainProductCard from "@/components/product/MainProductCard/MainProductCard";
+import MainProductCard from "@/components/pr1/product/MainProductCard/MainProductCard";
 import styles from "./MdPick.module.scss";
 import { MAIN_PRODUCT_SLIDE_DATA } from "@/constants/pr1/mockData";
 import { useEffect, useState } from "react";
