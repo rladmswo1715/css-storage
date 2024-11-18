@@ -1,6 +1,6 @@
 import useRefForanimate from "@/hooks/pr1/useRefForAnimate";
 import styles from "./MdPickContainer.module.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MdPick from "../MdPick/MdPick";
 
 const PICK_CATEGORY = [
@@ -34,6 +34,18 @@ const PICK_CATEGORY = [
 const MdPickContainer = () => {
   const [currentCategory, setCurrentCategory] = useState("aaa");
   const { isVisible, itemRef } = useRefForanimate<HTMLDivElement>();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const currentIndex = PICK_CATEGORY.findIndex(
+        (item) => item.keyword === currentCategory
+      );
+      const nextIndex = (currentIndex + 1) % PICK_CATEGORY.length;
+      setCurrentCategory(PICK_CATEGORY[nextIndex].keyword);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [currentCategory]);
 
   return (
     <div
