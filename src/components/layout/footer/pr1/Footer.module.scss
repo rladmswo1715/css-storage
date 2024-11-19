@@ -1,0 +1,32 @@
+.footer-wrap {
+  width: 100%;
+  background-color: #0a0a0a;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: auto;
+  margin: 0 auto;
+
+  > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  color: #7b7b7b;
+  font-size: 14px;
+}
+
+.before {
+  color: #bab9b9;
+}

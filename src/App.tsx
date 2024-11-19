@@ -1,4 +1,4 @@
-import IncludeHeaderStructure from "components/layout/IncludeHeaderStructure";
+import IncludeHeaderStructure from "@/components/layout/IncludeLayoutStructure";
 import Main from "pages/main/Main";
 import First from "pages/storage/first/First";
 import Second from "pages/storage/second/Second";
