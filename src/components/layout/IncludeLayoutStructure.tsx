@@ -17,9 +17,7 @@ const footers: Record<string, LayoutComponent> = {
 const IncludeLayoutStructure: React.FC = () => {
   const { pathname } = useLocation();
   const layoutKey = pathname.split("/")[1];
-  const HeaderComponent: LayoutComponent = headers[layoutKey] || (
-    <div>기본 페이지</div>
-  );
+  const HeaderComponent: LayoutComponent = headers[layoutKey] || <></>;
   const FooterComponent: LayoutComponent = footers[layoutKey] || <></>;
 
   return (
